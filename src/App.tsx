@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { AdviceContainer } from "./components/advice-container";
 
 function App() {

@@ -15,8 +15,9 @@ export function AdviceContainer() {
     });
   }, []);
   return (
-    <h1>
-      Advice {advice?.id} {advice?.advice}
-    </h1>
+    <div>
+      <h1>Advice #{advice?.id}</h1>
+      <p>{advice?.advice}</p>
+    </div>
   );
 }
