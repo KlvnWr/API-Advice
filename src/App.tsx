@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import { apiClient } from "./services/api-client";
 import { Props } from "./components/advice-container";
+import import('tailwindcss').Config
 
 function AdviceContainer() {
   const [props, setProps] = useState<Props>();
