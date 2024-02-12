@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import { apiClient } from "./services/api-client";
 import { Props } from "./components/advice-container";
-import import('tailwindcss').Config
+// import import('tailwindcss').Config
 
 function AdviceContainer() {
   const [props, setProps] = useState<Props>();
@@ -25,7 +25,7 @@ function AdviceContainer() {
 
   return (
     <div>
-      <h1>Advice #{props?.id}</h1>
+      <h1 className="text-blue-700 bg-white">Advice #{props?.id}</h1>
       <p>{props?.advice}</p>
     </div>
   );
