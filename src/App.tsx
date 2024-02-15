@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import { apiClient } from "./services/api-client";
 import { Props } from "./components/advice-container";
+import { ButtonRestart } from "./components/advice-container/button";
 // import import('tailwindcss').Config
 
 function AdviceContainer() {
@@ -24,10 +25,15 @@ function AdviceContainer() {
   }
 
   return (
-    <div>
-      <h1 className="text-blue-700 bg-white">Advice #{props?.id}</h1>
-      <p>{props?.advice}</p>
-    </div>
+    <section>
+      <div className="bg-DarkGrayishBlue p-10 max-h-30 max-w-prose rounded-lg">
+        <h1 className="text-NeonGreen text-lg pb-6">Advice #{props?.id}</h1>
+        {/* <p className="text-LightCyan text-4xl">{props?.advice}</p> */}
+        <p className="text-LightCyan text-4xl">"It is easy to sit up and take notice, what's difficult is getting up and taking action"</p>
+        
+      </div>
+      <ButtonRestart />
+    </section>   
   );
 }
 

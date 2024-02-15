@@ -7,7 +7,15 @@ export default {
     "App.scss",
     "index.scss"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'LightCyan': '#cee3e9',
+        'NeonGreen': '#52ffa8',
+        'GrayishBlue': '#4e5d73',
+        'DarkGrayishBlue': '#323a49',
+        'DarkBlue': '#1f2632',
+      },
+    },
   },
   plugins: [],
 }
