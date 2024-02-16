@@ -25,15 +25,20 @@ function AdviceContainer() {
   }
 
   return (
-    <section>
-      <div className="bg-DarkGrayishBlue p-10 max-h-30 max-w-prose rounded-lg">
-        <h1 className="text-NeonGreen text-lg pb-6">Advice #{props?.id}</h1>
-        {/* <p className="text-LightCyan text-4xl">{props?.advice}</p> */}
-        <p className="text-LightCyan text-4xl">"It is easy to sit up and take notice, what's difficult is getting up and taking action"</p>
-        
-      </div>
-      <ButtonRestart />
-    </section>   
+    <body>
+      <section className="text-center">
+        <div className="bg-DarkGrayishBlue p-10 max-h-30 max-w-prose rounded-lg">
+          <h1 className="text-NeonGreen text-lg pb-6 ">Advice #{props?.id}</h1>
+          <p className="text-LightCyan text-4xl pb-6">{props?.advice}</p>
+          <div className="flex justify-center">
+            <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
+          </div>
+        </div>
+        <div className="flex justify-center pt-[-10rem]">
+          <ButtonRestart />
+        </div>
+      </section>     
+    </body>
   );
 }
 

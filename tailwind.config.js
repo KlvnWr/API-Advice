@@ -3,6 +3,7 @@ export default {
   content: ["./index.html",
     "./src/components/advice-container/index.tsx",
     "./src/App.tsx",
+    "./src/components/advice-container/button.tsx",
     "main.tsx",
     "App.scss",
     "index.scss"],
