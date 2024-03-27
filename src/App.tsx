@@ -25,7 +25,7 @@ function AdviceContainer() {
   }
 
   return (
-    <body>
+    <div>
       <section className="text-center">
         <div className="bg-DarkGrayishBlue p-10 max-h-30 max-w-prose rounded-lg">
           <h1 className="text-NeonGreen text-lg pb-6 ">Advice #{props?.id}</h1>
@@ -38,7 +38,7 @@ function AdviceContainer() {
           <ButtonRestart />
         </div>
       </section>     
-    </body>
+    </div>
   );
 }
 
